@@ -1,0 +1,43 @@
+@media screen and (max-width: 750px){
+    main .top {
+        width: 95%;
+        margin: 0px auto 150px ;
+    }
+    
+    .blog-card{
+        flex-wrap: wrap;
+    }
+
+    .blog-card-img{
+        width: 100%;
+    }
+
+    .blog-card-content{
+        width: 100%!important;
+        padding: 23px!important;
+    }
+
+    main .top .form{
+        width: 95%!important;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .gallery-images {
+        flex-wrap: wrap;
+    }
+
+    .gallery-images .card-gallery {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .gallery-images .card-gallery img{
+        object-position: top;
+    }
+
+    footer .btn-suscribe{
+        width: 100%;
+    }
+
+}

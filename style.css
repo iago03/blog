@@ -35,6 +35,10 @@ header .navbar .mr-right li i{
     font-size: 18px;
 }
 
+header .header-title{
+    display: none;
+}
+
 main{
     margin-bottom: 9px;
 }
@@ -44,7 +48,7 @@ main .top{
     margin: 24px auto 150px;
 }
 
-main .top h1{
+main .top .main-title,header .header-title{
     font-size: 60px;
     font-family: 'Playfair Display', serif;
     font-weight: 400;

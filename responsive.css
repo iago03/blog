@@ -1,4 +1,10 @@
 @media screen and (max-width: 750px){
+    /* header */
+    header{
+        width: 95%!important;
+    }
+    /* header */
+
     main .top {
         width: 95%;
         margin: 0px auto 150px ;
@@ -20,9 +26,30 @@
     main .top .form{
         width: 95%!important;
     }
+
+    /* blog & blog-item*/
+    main .blog-card-area,main .blog-item-card-area{
+        width: 100%;
+    }
+    main .blog-card-area .card,main .blog-item-card-area .card{
+        padding: 20px 20px;
+        
+    }
+    main .blog-card-area .card .card-title,main .blog-item-card-area .card .card-title{
+        text-align: center;
+    }
+
+    main .blog-item-card-area .all-item{
+        display: block;
+        text-align: center;
+    }
+    /* blog & blog-item */
 }
 
 @media screen and (max-width: 650px){
+    h1{
+        font-size: 50px!important;
+    }
     .gallery-images {
         flex-wrap: wrap;
     }
@@ -41,3 +68,63 @@
     }
 
 }
+
+/* navbar buttun hamburger*/
+@media screen and (max-width:993px){
+    header{
+        width: 75%;
+        margin: 0px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .collapsing{
+        display: none;
+    }
+    
+    header .navbar{
+        padding-top: 10px;
+        width: auto;
+        margin: 0px;
+        position: inherit;
+    }
+
+    header .show{
+        position: absolute;
+        background-color: white;
+        top: 80px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    header .show ul{
+        margin: 0px auto;
+    }
+
+    header .show ul li{
+        padding: 0px!important;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    header .navbar .mr-auto li a{
+        font-size: 25px;
+    }
+
+    header .header-title{
+        display: block;
+        margin: 0px;
+    }
+
+    main .main-title{
+        display: none;
+    }
+}
+
+/* navbar button hamburger */

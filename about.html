@@ -37,13 +37,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="./index.html">Home</a>
+                        <a class="nav-link" href="./index.html">ГЛАВНАЯ</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="blog.html">БЛОГ</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">ОБО МНЕ</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-right">
@@ -74,37 +74,30 @@
 
     <main>
         <section class="top">
-            <h1>Arianna Castillo​</h1>
+            <h1>Ника Журавлева​</h1>
             <section class="img">
                 <img src="./img/about.jpg" alt="">
             </section>
 
             <article class="text">
-                <h2>About Me</h2>
-                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. <br>
-                    Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel
-                    free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story
-                    and let your users know a little more about you.</p>
-                <p>This is a great space to write long text about your company and your services. <br>
-                    You can use this space to go into a little more detail about your company. Talk about your team and
-                    what services you provide. Tell your visitors the story of how you came up with the idea for your
-                    business and what makes you different from your competitors. Make your company stand out and show
-                    your visitors who you are.</p>
+                <h2>Обо мне</h2>
+                <p>Это раздел «Обо мне». Самое место рассказать вашу историю и объяснить, чем вы занимаетесь. Если вы владелец бизнеса, напишите, как все начиналось, как вам пришла в голову та самая идея и к чему это привело. Людям будет интересно увидеть в вас реальную личность, поэтому не бойтесь делиться настоящими случаями из жизни. Расскажите о ваших ценностях и чем вы отличаетесь от конкурентов.</p>
+                <p>Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на странице. Расскажите посетителям сайта о себе.</p>
             </article>
 
             <article class="form">
-                <h2>Contact Me</h2>
-                <p>For PR enquiries please email info@mysite.com <br>
-                   For business and collaboration enquiries please email info@mysite.com</p>
+                <h2>Пишите</h2>
+                <p>По вопросам PR пишите на почту info@mysite.ru <br>
+                    Я всегда читаю и отвечаю на все сообщения, просто заполните форму:</p>
 
-                <form action="" method="POST">
+                <form action="POST" data-netlify="true">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name">
-                        <input type="text" class="form-control" placeholder="Email">
-                        <input type="phone" class="form-control" placeholder="phone">
+                        <input type="text" class="form-control" name="name" required placeholder="Name">
+                        <input type="email" class="form-control" name="email" required placeholder="Email">
+                        <input type="tel" class="form-control" name="phone" pattern="[0-9]{9}" required placeholder="phone">
                         <textarea class="form-control" rows="6"  placeholder="Type your message here..."></textarea>
                     </div>
-                    <button class="btn btn-suscribe">Submit</button>
+                    <button type="submit" class="btn btn-suscribe">Отправить</button>
                 </form>
             </article>
 
@@ -150,12 +143,12 @@
     <footer>
         <section class="form">
             <aside class="col-md-12">
-                <h3>Join My Mailing List</h3>
+                <h3>Подпишитесь на рассылку</h3>
                 <form action="" method="POST">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Enter your email here *">
                     </div>
-                    <button class="btn btn-suscribe">Subscribe Now</button>
+                    <button class="btn btn-suscribe">OK</button>
                 </form>
             </aside>
         </section>
@@ -177,7 +170,7 @@
 
             <h5>Instagram@AriannaCastillo​</h5>
         </section>
-        <p>© 2023 by Arianna Castillo​. Proudly created with Wix.com</p>
+        <p>© 2023 by DANTE</p>
     </footer>
 
 

@@ -43,8 +43,11 @@ if(body.id == "home"){
     
     
     function getCard(item){
+        var paragrap = "";
         if(item.Description.length > 120){
-            var paragrap = item.Description.slice(0,120);
+            paragrap = item.Description.slice(0,120);
+        }else{
+            paragrap = item.Description
         }
         return `<div class="blog-card">
                     <div class="blog-card-img">

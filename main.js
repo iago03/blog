@@ -24,7 +24,7 @@ class info{
     }
 }
 
-var body = document.querySelector("body");
+// var body = document.querySelector("body");
 
 var cardInfo = [
     new info("1","./img/img-girl1.jpg","Admin","июля",8,1,"Как выбрать идеальный принт","Вы уже придумали дизайн для блога? Попробуйте каждый из наших восьми макетов, чтобы скомпоновать содержание наилучшим образом.",8,9),
@@ -32,7 +32,7 @@ var cardInfo = [
     new info("3","./img/clothes.jpg","Admin","июля",8,1,"5 осенних образов, которые вы полюбите","Вы уже придумали дизайн для блога? Попробуйте каждый из наших восьми макетов, чтобы скомпоновать содержание наилучшим образом.",7,9)
 ]
 
-if(body.id == "home"){
+if(document.body.id == "home"){
 
     var cardArea = document.querySelector(".card-area")
     
@@ -87,7 +87,7 @@ if(body.id == "home"){
                 </div>`
     }
 }
-else if(body.id == "blog"){
+else if(document.body.id == "blog"){
     var blogCardArea = document.querySelector(".blog-card-area");
 
     cardInfo.forEach(o => {
@@ -131,7 +131,7 @@ else if(body.id == "blog"){
     }
 
 }
-else if(body.id == "blog-item"){
+else if(document.body.id == "blog-item"){
     var main = document.querySelector("#blog-item-content");
 
     cardInfo.forEach(o => {

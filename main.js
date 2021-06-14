@@ -37,10 +37,13 @@ if(document.body.id == "home"){
     var cardArea = document.querySelector(".card-area")
     
     
-    cardInfo.forEach(o => {
-        cardArea.innerHTML += getCard(o);
-    })
+    // cardInfo.forEach(o => {
+    //     cardArea.innerHTML += getCard(o);
+    // })
     
+    for(var i = 0; i < cardInfo.length; i++){
+        cardArea.innerHTML += getCard(cardInfo[i]);
+    }
     
     function getCard(item){
         var paragrap = "";

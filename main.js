@@ -24,8 +24,6 @@ class info{
     }
 }
 
-// var body = document.querySelector("body");
-
 var cardInfo = [
     new info("1","./img/img-girl1.jpg","Admin","июля",8,1,"Как выбрать идеальный принт","Вы уже придумали дизайн для блога? Попробуйте каждый из наших восьми макетов, чтобы скомпоновать содержание наилучшим образом.",8,9),
     new info("2","./img/img-girl2.jpg","Admin","июля",8,1,"Модная штучка: жакет","Вы уже придумали дизайн для блога? Попробуйте каждый из наших восьми макетов, чтобы скомпоновать содержание наилучшим образом.",3,9),
@@ -37,13 +35,10 @@ if(document.body.id == "home"){
     var cardArea = document.querySelector(".card-area")
     
     
-    // cardInfo.forEach(o => {
-    //     cardArea.innerHTML += getCard(o);
-    // })
+    cardInfo.forEach(o => {
+        cardArea.innerHTML += getCard(o);
+    })
     
-    for(var i = 0; i < cardInfo.length; i++){
-        cardArea.innerHTML += getCard(cardInfo[i]);
-    }
     
     function getCard(item){
         var paragrap = "";
